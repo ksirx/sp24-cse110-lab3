@@ -50,10 +50,11 @@
             <div>
               <h3><span style="color:red">Agenda</span></h3>
               <ol>
-                <li><b>**URGENT** (CONTINUE FROM LAST MEETING)</b></li>
-                <ol>
-                  <li>NONE!!!</li>
-                </ol>
+                <li><b>**URGENT** (CONTINUE FROM LAST MEETING)</b>
+                  <ol>
+                    <li>NONE!!!</li>
+                  </ol>
+                </li>
                 <li>Greet other group members</li>
                 <li>Complete nevcessary set up for project</li>
                 <li>Create group norms</li>
@@ -92,28 +93,28 @@
       <p>Here are also some examples of non-functional forms which cannot be used because of the lack of Javascript.</p> 
       <form action="forms">
         <fieldset>
-          <label for="question">Most useful section in website and why:</label>
-          <input type="text">
-          <button>Submit</button> <br>
-          <label for="attendance">Who were in attendance?</label> <br>
-          <input type="checkbox">
-          <label for="name">Xavier</label> <br>
-          <input type="checkbox">
-          <label for="name">John</label> <br>
-          <input type="checkbox">
-          <label for="name">Jane</label> <br>
-          <input type="checkbox">
-          <label for="name">Other</label> <br>
-          <button>Submit</button> <br>
-          <label for="usability">Was this site usable? (all sections readable)</label> <br>
-          <input type="radio">
-          <label for="">Yes</label> <br>
-          <input type="radio">
-          <label for="">No</label> <br>
-          <button>Submit</button> <br>
+          <label for="forms">Most useful section in website and why:</label>
+          <input type="text" id="forms" name="forms">
+          <button type="submit">Submit</button> <br>
+          <label for="forms">Who were in attendance?</label> <br>
+          <input type="checkbox" id="xavier" name="xavier">
+          <label for="xavier">Xavier</label> <br>
+          <input type="checkbox" id="john" name="john">
+          <label for="john">John</label> <br>
+          <input type="checkbox" id="jane" name="jane">
+          <label for="jane">Jane</label> <br>
+          <input type="checkbox" id="other" name="other">
+          <label for="other">Other</label> <br>
+          <button type="submit">Submit</button> <br>
+          <label for="forms">Was this site usable? (all sections readable)</label> <br>
+          <input type="radio" id="yes" name="yes">
+          <label for="yes">Yes</label> <br>
+          <input type="radio" id="no" name="no">
+          <label for="no">No</label> <br>
+          <button type="submit">Submit</button> <br>
           <label for="date-accessed">What date are you currently using this website?</label> <br>
-          <input type="date">
-          <button>Submit</button>
+          <input type="date" id="date-accessed" name="date-accessed">
+          <button type="submit">Submit</button>
         </fieldset>
       </form>
       <label for="bed-time">Around how many hours of sleep do you get per night?</label>
@@ -128,7 +129,7 @@
       <button>Submit</button>
       <br>
       <label for="rating">Rate this list from 1 (bad) to 5 (good)</label> <br>
-      <input list="rate" id="rating" name="rating" />
+      <input list="rate" id="rating" name="rating" >
       <datalist id="rate">
         <option value="5"></option>
         <option value="4"></option>
