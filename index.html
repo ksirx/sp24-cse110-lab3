@@ -28,8 +28,20 @@
               <h3><span style="color:red">Attendance</span></h3>
               <ul>
                 <li><em>Xavier Navarro</em></li>
+                <details>
+                  <summary>About</summary>
+                  <p>Second year student from Marshall</p>
+                </details>
                 <li><em>John Doe</em></li>
+                <details>
+                  <summary>About</summary>
+                  <p>Third year student from Sixth</p>
+                </details>
                 <li><em>Jane Doe</em></li>
+                <details>
+                  <summary>About</summary>
+                  <p>Second year student from Seventh</p>
+                </details>
               </ul>
             </div>
             <div>
@@ -49,7 +61,7 @@
             <div>
               <h3><span style="color:red">Brainstorming</span></h3>
               <main>
-                <p>Some of the group norms that we came up with are that we need to be respectful to one other, keep good communication, and make sure to contribute.</p>
+                <p>Some of the group norms that we came up with are that we need to be respectful to one other, keep good communication, <br> and make sure to contribute.</p>
                 <p><strong>Start early, start often!</strong></p>
               </main>
             </div>
@@ -62,7 +74,7 @@
             <div>
               <h3><span style="color:red">Check-In's</span></h3>
               <main>
-                <p>We made sure that everyone has access to Github. If not here for this meeting, use this link to ensure you either have an account, or make one before next meeting.</p>
+                <p>We made sure that everyone has access to Github. <br> If not here for this meeting, use this link to ensure you either have an account, or make one before next meeting.</p>
             </div>
       </section>
     </main>
@@ -75,10 +87,58 @@
         Your browser does not support the audio tag.
       </audio>
       <p>And heres a short clip</p>
-      <video width="320" height="240" controls>
+      <video controls>
         <source src="movie.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
+      <p>Here are also some examples of non-functional forms which cannot be used because of the lack of Javascript.</p> 
+      <form action="forms">
+        <fieldset>
+          <label for="question">Most useful section in website and why:</label>
+          <input type="text">
+          <button>Submit</button> <br>
+          <label for="attendance">Who were in attendance?</label> <br>
+          <input type="checkbox">
+          <label for="name">Xavier</label> <br>
+          <input type="checkbox">
+          <label for="name">John</label> <br>
+          <input type="checkbox">
+          <label for="name">Jane</label> <br>
+          <input type="checkbox">
+          <label for="name">Other</label> <br>
+          <button>Submit</button> <br>
+          <label for="usability">Was this site usable? (all sections readable)</label> <br>
+          <input type="radio">
+          <label for="">Yes</label> <br>
+          <input type="radio">
+          <label for="">No</label> <br>
+          <button>Submit</button> <br>
+          <label for="date-accessed">What date are you currently using this website?</label> <br>
+          <input type="date">
+          <button>Submit</button>
+        </fieldset>
+      </form>
+      <label for="bed-time">Around how many hours of sleep do you get per night?</label>
+      <select name="bedtime" id="bed-time">
+        <option value="">Select the value closest to your estimate.</option>
+        <option value="none">None</option>
+        <option value="onetofive">1-5</option>
+        <option value="sixtoten">6-10</option>
+        <option value="twelveto24">12-24</option>
+        <option value="all day">All day</option>
+      </select>
+      <button>Submit</button>
+      <br>
+      <label for="rating">Rate this list from 1 (bad) to 5 (good)</label> <br>
+      <input list="rate" id="rating" name="rating" />
+      <datalist id="rate">
+        <option value="5"></option>
+        <option value="4"></option>
+        <option value="3"></option>
+        <option value="2"></option>
+        <option value="1"></option>
+      </datalist>
+      <button>Submit</button>
     </footer>
   </body>
 </html>
