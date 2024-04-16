@@ -1,2 +1,2 @@
 # Lab 2 - Starter
-https://ksirx.github.io/Lab2_Starter/ 
+https://ksirx.github.io/https://ksirx.github.io/
