@@ -1,6 +1,6 @@
 /*makes the header yellow*/
 header {
- background-color: color(sRGB 1 0.5 1 / 50%), white;
+    background-color: color(sRGB 1 0.5 1 / 50%), white;
 }
 
 /*Colors the entire background a light yellow color*/
@@ -10,7 +10,8 @@ body {
 
 /*Makes the footer honeydew color*/
 footer {
- background-color: color-mix(in lch, yellow 50%, white 50%);
+    background-color: color-mix(in lch, yellow 50%, white 50%);
+    display:inline-block;
 }
 
 /*Makes the title a red color*/
@@ -47,6 +48,7 @@ h3 {
 /*Colors the divs a honeydew color*/
 div {
     background-color: #fee, white;
+    display: block;
 }
 
 /*Acts as a highlight on some of the text*/
@@ -72,5 +74,5 @@ p {
 /*Handles the various lists **agenda** and **attendance** stying*/
  ol,
  li {
-    margin: 20px 20px 2mm 2mm ;
+    margin: 20px 20px 2mm 2mm;
  }
