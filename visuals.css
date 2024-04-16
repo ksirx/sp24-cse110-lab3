@@ -5,7 +5,7 @@ header {
 
 /*Colors the entire background a light yellow color*/
 body {  
-    background-color: lightgoldenrodyellow, white;
+    background-color: lightgoldenrodyellow;
 }
 
 /*Makes the footer honeydew color*/
@@ -18,17 +18,29 @@ h1 {
     color:rgb(255, 0, 0), black;
     text-align: center;
     background-color: rgba(255, 160, 122, 0.466), white;
+    border: 0.5rem groove red;
+    border-radius: 1000vh;
 }
 
 /*makes the smaller subtitels a orangered color*/
 h2 {
     color:orangered, black;
     text-align: center;
+    margin: auto;
+    border-width: 0.5vh;
+    border-style: double;
+    border-color: orangered;
+    border-radius: 1000vh;
 }
 
 /*Adds color to the h3, but is overridden by the inline css*/
 h3 {
     color: hsl(0, 0, 0);
+    border: 1vw double black;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    border-radius: 1000vh;
+
 }
 
 /*Colors the divs a honeydew color*/
@@ -40,3 +52,24 @@ div {
 span {
     background-color: yellow,white;
 }
+
+/*Adds a dotted border for each paragraph*/
+p {
+    color: black;
+    border: 1px dotted black;
+    margin-top: 0.25cm;
+    margin-bottom: 0.25cm;
+    margin-left: 0.25cm;
+    margin-right: 0.25cm;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 1000vh;
+}
+
+/*Handles the various lists **agenda** and **attendance** stying*/
+ ol,
+ li {
+    margin: 20px 20px 2mm 2mm ;
+ }
