@@ -1,3 +1,41 @@
+/*makes the header yellow*/
+header {
+ background-color: color(sRGB 1 0.5 1 / 50%)
+}
+
+/*Colors the entire background a light yellow color*/
 body {  
-    background-color: blue;
+    background-color: lightgoldenrodyellow;
+}
+
+/*Makes the footer honeydew color*/
+footer {
+ background-color: color-mix(in lch, yellow 50%, white 50%);
+}
+
+/*Makes the title a red color*/
+h1 {
+    color:rgb(255, 0, 0);
+    text-align: center;
+    background-color: rgba(255, 160, 122, 0.466);
+}
+
+/*makes the smaller subtitels a orangered color*/
+h2 {
+    color:orangered;
+    text-align: center;
+}
+
+/*Adds color to the h3, but is overridden by the inline css*/
+h3 {
+    color: hsl(0, 0, 0);
+}
+
+/*Colors the divs a honeydew color*/
+div {
+    background-color: #fee;
+}
+
+span {
+    background-color: yellow;
 }
