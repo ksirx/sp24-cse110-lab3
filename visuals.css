@@ -12,6 +12,8 @@ body {
 footer {
     background-color: color-mix(in lch, yellow 50%, white 50%);
     display:inline-block;
+    position: relative;
+    left: 30%;
 }
 
 /*Makes the title a red color*/
@@ -39,6 +41,7 @@ h2 {
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    position: sticky;
 }
 
 /*Adds color to the h3, but is overridden by the inline css*/
@@ -59,8 +62,9 @@ h3 {
 
 /*Colors the divs a honeydew color*/
 div {
-    background-color: #fee, white;
+    background-color: #fee;
     display: block;
+    position:sticky;
 }
 
 /*Acts as a highlight on some of the text*/
@@ -93,3 +97,32 @@ p {
     background-color: black;
     color: white;
  }
+
+
+ img {
+    position: relative;
+    left: 19.5cm;
+    height: 10cm;
+    width: 10cm;
+ }
+
+ audio {
+    position: relative;
+    left: 29%;
+ }
+
+ video {
+    position: relative;
+    left: 7%;
+ }
+
+ button:hover {
+    color:white;
+    background-color: red;
+ }
+
+ button:active {
+    color: white;
+    background-color: green;
+ }
+
