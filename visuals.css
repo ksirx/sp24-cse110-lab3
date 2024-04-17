@@ -90,7 +90,10 @@ p {
 /*Handles the various lists **agenda** and **attendance** stying*/
  ol,
  li {
-    margin: 20px 20px 2mm 2mm;
+    margin: 2px 2px 2px 2px;
+    display:grid;
+    border: 1px solid black;
+    color:black;
  }
 
  form {
@@ -126,3 +129,35 @@ p {
     background-color: green;
  }
 
+ /*Modify the border of the grid*/
+ .grids {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: blue;
+    gap: 2px;
+    padding: 2px;
+ }
+ 
+ /*Modify the inside section of the grid*/
+ .grids > div {
+    text-align: center;
+    background-color: lightblue;
+    padding: 2cm;
+ }
+
+ /*Modify how the flex is listed*/
+ .flexs {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+ }
+
+ /*Modifies the divs within the flex*/
+ .flexs > div {
+    border: 1px solid black;
+    background-color: white;
+    color:red;
+    padding: 2cm;
+    ;
+ }
