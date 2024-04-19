@@ -1,6 +1,6 @@
 /*makes the header yellow*/
 header {
-   background-color: color(sRGB 1 0.5 1 / 50%), white;
+   background-color: red;
 }
 
 /*Colors the entire background a light yellow color*/
@@ -10,7 +10,7 @@ body {
 
 /*Makes the footer honeydew color*/
 footer {
-   background-color: color-mix(in lch, yellow 50%, white 50%);
+   background-color: color-mix(in srgb, yellow 20%, white 50%);
    display:inline-block;
    position: relative;
    height:auto;
@@ -23,10 +23,9 @@ footer {
 
 /*Makes the title a red color*/
 h1 {
-   color:rgb(255, 0, 0), black;
+   color:rgb(255, 0, 0);
    text-align: center;
    text-decoration:underline;
-   background-color: rgba(255, 160, 122, 0.466), white;
    border: 0.5rem groove red;
    border-radius: 1000vh;
    min-width:fit-content;
@@ -35,7 +34,7 @@ h1 {
 
 /*makes the smaller subtitels a orangered color*/
 h2 {
-   color:orangered, black;
+   color:orangered;
    text-align: center;
    margin: auto;
    border-width: 0.5vh;
@@ -48,14 +47,12 @@ h2 {
    padding-left: 10px;
    padding-right: 10px;
    position: sticky;
-   height:fit-content 100%;
-   width: fit-content 100%;
    font-family: "Jacquard 24", system-ui;
 }
 
 /*Adds color to the h3, but is overridden by the inline css*/
 h3 {
-   color: hsl(0, 0, 0);
+   color: hsl(286, 52%, 46%);
    border: 0.25vw double black;
    text-align: center;
    padding: 5px 5px 5px 5px;
@@ -64,10 +61,7 @@ h3 {
    padding-bottom: 10px;
    padding-left: 10px;
    padding-right: 10px;
-   height:fit-content 100%;
-   width: fit-content 100%;
    font-family: "Jacquard 24", system-ui;
-
 }
 
 /*Colors the divs a honeydew color*/
@@ -79,7 +73,7 @@ div {
 
 /*Acts as a highlight on some of the text*/
 span {
-   background-color: yellow,white;
+   background-color:  color(sRGB 0.3 0.6 0.4 / 50%);
 }
 
 /*Adds a dotted border for each paragraph*/
@@ -100,9 +94,8 @@ p {
 /*Handles the various lists **agenda** and **attendance** stying*/
 ol,
 li {
-   margin: 2px 2px 2px 2px;
-   display:grid;
-   border: 1px solid black;
+   list-style-type: circle;
+   display:block;
    color:black;
 }
 
@@ -113,7 +106,8 @@ form {
 
 img {
    position:relative;
-   max-width: 100%;
+   width: 20%;
+   left: 40%;
    height: auto;
 }
 
@@ -159,6 +153,8 @@ button:active {
    text-align: center;
    background-color: lightblue;
    padding: 2cm;
+   font-size: 1cm;
+   font-family: "Jacquard 24", system-ui;
 }
 
  /*Modify how the flex is listed*/
@@ -176,12 +172,69 @@ button:active {
    background-color: white;
    color:red;
    padding: 2cm;
+   font-size: 1cm;
+   font-family: "Jacquard 24", system-ui;
 }
 
+* {
+   color: darkcyan
+}
+
+#haha {
+   color: lightskyblue;
+}
+
+p[target] {
+   color:blueviolet;
+}
+
+li p {
+   background-color: white;
+}
+
+form ~ label {
+   color: white;
+   background-color: orange;
+}
+
+li + li {
+   color: grey;
+}
+
+h1.title {
+   font-size:5cm;
+   color: black;
+   background-color: white;
+}
+
+h2.section {
+   background-color: white;
+}
+
+:is(footer):has(p) {
+   color: white;
+   font-size: 20px;
+}
+
+.questions1 {
+   .btn {
+      size: 2cm;
+   }
+}
+
+/*Handles the cases where screen might be shrinekd*/
 @media only screen and (max-width: 700px) {
    img {
       position:static;
       width: 100%;
       height: auto;
+   }
+}
+
+@media only screen and (max-width: 700px) {
+   h1.title {
+      font-size:1cm;
+      color: orange;
+      background-color: white;
    }
 }
