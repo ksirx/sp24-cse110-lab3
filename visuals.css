@@ -10,7 +10,7 @@ body {
 
 /*Makes the footer honeydew color*/
 footer {
-   background: color-mix(in srgb, yellow 20%, white 50%);
+   background-color: color-mix(in srgb, yellow 20%, white 50%);
    display:inline-block;
    position: relative;
    height:auto;
@@ -73,7 +73,7 @@ div {
 
 /*Acts as a highlight on some of the text*/
 span {
-   background:  color(sRGB 0.3 0.6 0.4 / 50%);
+   background-color:  color(sRGB 0.3 0.6 0.4 / 50%);
 }
 
 /*Adds a dotted border for each paragraph*/
